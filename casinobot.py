@@ -6,7 +6,7 @@ import functools
 import logging
 import redis
 import telegram
-from telegram.ext import Updater
+from telegram import Updater
 
 import decorators
 from game import InvalidGameParams
@@ -19,9 +19,9 @@ __package__ = 'casinobot'
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
-TOKEN = '173695676:AAF25jZo_Q13Zyi66upxtYuzefuJ4QT4Q-Y'  # old revoked token
-ADMIN_USERS = [8553438, 93238420]
-CASINO_CHAT_ID = -1001044483707
+TOKEN = '1159558042:AAE-Nwje9rkFdl2PpzebLkmaXJslTKdX-vo'  # old revoked token
+ADMIN_USERS = [954249744]
+CASINO_CHAT_ID = -1001138407304
 
 r = redis.StrictRedis(host='localhost', port=6379, decode_responses=True)
 j = None
